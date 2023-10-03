@@ -11,8 +11,7 @@
   - [0.2 All structure, assets, and code in any Unreal Engine 4 project should look like a single person created it, no matter how many people contributed](#0.2)
   - [0.3 Friends do not let friends have bad style](#0.3)
   - [0.5 Don't Break The Law](#0.5)
-- [00. Globally Enforced Opinions](#00)
-  - [00.1 Forbidden Characters](#00.1)
+  [00 Forbidden Characters](#00)
     - [Identifiers](#identifiers)
 - [1. Asset Naming Conventions](#anc)
   - [1.1 Base Asset Name - `Prefix_BaseAssetName_Variant_Suffix`](#base-asset-name)
@@ -87,9 +86,8 @@
     - [3.3.5 All Custom Static Plugin `BlueprintCallable` Functions Must Be Categorized By Plugin Name](#bp-graphs-funcs-plugin-category)
   - [3.4 Blueprint Graphs](#bp-graphs)
 - [4. Static Meshes](#4)
-  - [4.1 Static Mesh UVs](#s-uvs)
-    - [4.1.1 All Meshes Must Have UVs](#s-uvs-no-missing)
-    - [4.1.2 All Meshes Must Not Have Overlapping UVs for Lightmaps](#s-uvs-no-overlapping)
+  - [4.1.1 All Meshes Must Have UVs](#s-uvs-no-missing)
+  - [4.1.2 All Meshes Must Not Have Overlapping UVs for Lightmaps](#s-uvs-no-overlapping)
   - [4.2 LODs Should Be Set Up Correctly](#s-lods)
   - [4.3 Modular Socketless Assets Should Snap To The Grid Cleanly](#s-modular-snapping)
   - [4.4 All Meshes Must Have Collision](#s-collision)
@@ -193,8 +191,8 @@ If you are helping someone whose work conforms to a different but consistent and
 * Don't steal content
 * Follow licensing restrictions on content, e.g. attribute when attributions are needed
 
-<a name="00.1"></a>
-### 00.1 Forbidden Characters
+<a name="00"></a>
+### 00 Forbidden Characters
 
 <a name="identifiers-1"></a>
 #### Identifiers
