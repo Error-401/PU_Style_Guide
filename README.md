@@ -1,6 +1,6 @@
-# PU UE4 Style Guide {
+# PU UE4 Style Guide 
 
-*A fairly simplistic approach to Unreal Engine 4*
+*A slight simplification to another UE5 style guide. See TL;DR for the quickest reference.*
 
 ## Table of contents
 - [TL;DR](#tldr)
@@ -108,11 +108,28 @@
   - [7.3 Textures Should Be No Bigger than 8192](#textures-max-size)
   - [7.4 Textures Should Be Grouped Correctly](#textures-group)
 
+<a name="tldr"></a>
 ## TL;DR
 All assets (everything is an asset) should be prefixed with it's type, then given a short but descriptive name.
 For mesh assets:
+Prefix_BaseAssetName_Variant_Suffix
 
-Textures have specific postfixes:
+Textures are prefixed with 'Tex_' and have specific postfixes:
+Albedo (Base Color) - _A
+Roughness/Metallic - _RM
+Emission/Ambient Occlusion - _EMO
+Opacity - O
+Normal/Depth - N
+
+Materials are prefixed with 'Mat_'
+
+2D Assets like sprites are prefixed as 'P2d'.
+
+When in doubt: use PascalCase for variable and method names.
+
+Scripts that are interfaces should have names that start with 'I'.
+No script name should start with 'My'
+Use comments to describe what you're doing in that method and section of code.
 
 <a name="terms-cases"></a>
 ##### Cases
@@ -342,10 +359,10 @@ When naming an asset, use these tables to determine the prefix and suffix to use
 | Asset Type              | Prefix     | Suffix     | Notes                            |
 | ----------------------- | ---------- | ---------- | -------------------------------- |
 | Texture                 | Tex_         |            |                                  |
-| Texture (Diffuse/Albedo/Base Color)| Tex_ | _D      |                                  |
+| Texture (Albedo/Base Color)| Tex_ | _A      |                                  |
 | Texture (Normal)        | Tex_         | _N         |                                  |
 | Texture (Roughness/Metal)| Tex_         | _RM       |                                  |
-| Texture (Opacity)       | Tex_         | _A         |                                  |
+| Texture (Opacity)       | Tex_         | _O         |                                  |
 | Texture (Emission/Occlusion)| Tex_     | _EMO       |                                  |
 | Texture (Bump)          | Tex_         | _B         |                                  |
 | Texture (Mask)          | Tex_         | _M         |                                  |
